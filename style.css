@@ -1,0 +1,25 @@
+/* Wax Nostalgic Games: a record-sleeve dark with warm wax colours, readable on a phone. */
+:root { --ink: #f6ead2; --soft: #c8b9a4; --night: #15100d; --panel: #221a15; --edge: #4a3a2e; --wax: #e8a33c; --red: #d9534a; --link: #f2c46b; }
+* { box-sizing: border-box; }
+html { background: var(--night); -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: radial-gradient(110% 70% at 50% 0%, #3a2418 0%, var(--night) 60%); color: var(--ink); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; min-height: 100vh; }
+a { color: var(--link); }
+img { max-width: 100%; height: auto; }
+.pixel { image-rendering: pixelated; }
+header { text-align: center; padding: 48px 16px 24px; }
+header h1 { margin: 0; font-size: 40px; line-height: 1.15; letter-spacing: .5px; text-shadow: 0 3px 0 #000; }
+header h1 span { color: var(--wax); }
+header p { margin: 8px 0 0; color: var(--soft); }
+nav { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 16px; }
+nav a { color: var(--ink); font-weight: 600; }
+main { max-width: 760px; margin: 0 auto; padding: 8px 16px 48px; }
+h2 { font-size: 22px; margin: 32px 0 12px; color: var(--wax); }
+.game { display: flex; gap: 18px; align-items: center; background: var(--panel); border: 2px solid var(--edge); border-radius: 14px; padding: 16px; }
+.game img { width: 96px; height: 96px; border-radius: 22px; flex: none; box-shadow: 0 4px 0 rgba(0,0,0,.4); }
+.game h3 { margin: 0; font-size: 21px; }
+.game p { margin: 4px 0 0; color: var(--soft); }
+.game .stores { margin-top: 8px; font-weight: 600; }
+.prose h2 { margin-top: 28px; }
+.prose p, .prose li { color: var(--ink); }
+footer { text-align: center; color: var(--soft); font-size: 14px; padding: 24px 16px 40px; }
+@media (max-width: 480px) { header h1 { font-size: 32px; } .game { flex-direction: column; text-align: center; } }
