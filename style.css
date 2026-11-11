@@ -23,3 +23,11 @@ h2 { font-size: 22px; margin: 32px 0 12px; color: var(--wax); }
 .prose p, .prose li { color: var(--ink); }
 footer { text-align: center; color: var(--soft); font-size: 14px; padding: 24px 16px 40px; }
 @media (max-width: 480px) { header h1 { font-size: 32px; } .game { flex-direction: column; text-align: center; } }
+
+.mast { display: block; width: min(100%, 900px); height: auto; margin: 0 auto; border-radius: 10px; box-shadow: 0 6px 0 rgba(0,0,0,.35); }
+.kit { display: grid; gap: 22px; }
+.kit figure { margin: 0; background: var(--panel); border: 2px solid var(--edge); border-radius: 12px; padding: 14px; display: grid; gap: 8px; }
+.kit img { width: 100%; height: auto; border-radius: 6px; }
+.kit .sq { max-width: 280px; }
+.kit figcaption { color: var(--soft); font-size: 15px; }
+.kit b { color: var(--ink); }

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ramp n Roll · Wax Nostalgic Games</title>
+  <meta name="description" content="Ramp n Roll: flick a ball up the lane, light up the machine, win tickets, buy ridiculous prizes. Free on the App Store and Google Play.">
+  <meta property="og:title" content="Ramp n Roll">
+  <meta property="og:description" content="Flick a ball up the lane, light up the machine, win tickets, buy ridiculous prizes. Free on the App Store and Google Play.">
+  <meta property="og:image" content="https://webdevbrian.github.io/rampnroll-site/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#15100d">
+  <link rel="icon" href="../brand/favicon-32.png">
+  <link rel="stylesheet" href="../style.css">
+  <script>
+    // Each post links here with ?c=<campaign> (bsky-1117, yt-1117…): phones go straight to their store
+    // with the campaign attached, so the stores' analytics say which post brought the install.
+    (function () {
+      var q = new URLSearchParams(location.search);
+      var c = (q.get('c') || 'site').replace(/[^a-zA-Z0-9_-]/g, '').slice(0, 30) || 'site';
+      var src = c.split('-')[0];
+      var ios = 'https://apps.apple.com/app/id6830187638?pt=528711&ct=' + c + '&mt=8';
+      var play = 'https://play.google.com/store/apps/details?id=com.webdevbrian.rampnroll&referrer=' + encodeURIComponent('utm_source=' + src + '&utm_medium=social&utm_campaign=' + c);
+      window.__stores = { ios: ios, play: play };
+      var ua = navigator.userAgent;
+      var apple = /iPhone|iPad|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+      if (apple) location.replace(ios);
+      else if (/Android/.test(ua)) location.replace(play);
+    })();
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Ramp <span>n</span> Roll</h1>
+    <p>Flick a ball up the lane, light up the machine, win tickets, buy ridiculous prizes. Then go again.</p>
+  </header>
+  <main>
+    <article class="game">
+      <img class="pixel" src="../games/ramp-n-roll.png" alt="Ramp n Roll's icon" width="256" height="256">
+      <div>
+        <h3>Free on your phone</h3>
+        <p class="stores"><a id="ios" href="https://apps.apple.com/app/id6830187638?pt=528711&ct=site&mt=8">App Store</a> · <a id="play" href="https://play.google.com/store/apps/details?id=com.webdevbrian.rampnroll">Google Play</a></p>
+        <p><a href="https://webdevbrian.github.io/rampnroll-site/">More about the game</a></p>
+      </div>
+    </article>
+  </main>
+  <footer>Wax Nostalgic Games · <a href="../">All our games</a></footer>
+  <script>
+    document.getElementById('ios').href = window.__stores.ios;
+    document.getElementById('play').href = window.__stores.play;
+  </script>
+</body>
+</html>
