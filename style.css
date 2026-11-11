@@ -31,3 +31,28 @@ footer { text-align: center; color: var(--soft); font-size: 14px; padding: 24px 
 .kit .sq { max-width: 280px; }
 .kit figcaption { color: var(--soft); font-size: 15px; }
 .kit b { color: var(--ink); }
+
+/* Follow along: a sheet of letter paper with the platforms' wax seals (brand/social/, drawn by brand.mjs). */
+.follow { margin: 40px calc(50% - min(50vw - 16px, 470px)) 0; background: #f5e8cb; color: #3a2416; border-radius: 6px; padding: 22px 18px 18px; box-shadow: 0 6px 0 rgba(0,0,0,.35), inset 0 0 0 2px #e0c99c; position: relative; }
+.follow::before { content: ""; position: absolute; inset: 8px; border: 1px dashed #cfb381; border-radius: 3px; pointer-events: none; }
+.follow h2 { margin: 0; text-align: center; color: #951a23; font-size: 24px; letter-spacing: 1px; text-transform: uppercase; }
+.follow > p { margin: 4px 0 14px; text-align: center; color: #6b5034; }
+.seals { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 6px; position: relative; }
+.seals li { width: 120px; }
+.seals a { display: flex; flex-direction: column; align-items: center; text-decoration: none; color: inherit; padding: 6px 4px 10px; border-radius: 8px; }
+.seals img { width: 112px; height: 112px; transition: transform .12s steps(2); }
+.seals b { font-size: 16px; color: #3a2416; }
+.seals a:hover img, .seals a:focus-visible img { transform: translateY(-4px) rotate(-4deg); }
+.seals a:focus-visible { outline: 2px solid #951a23; outline-offset: 2px; }
+.seal-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px; margin: 0 auto 10px; }
+.seal-row img { width: 56px; height: 56px; display: block; transition: transform .12s steps(2); }
+.seal-row a:hover img, .seal-row a:focus-visible img { transform: translateY(-2px); }
+@media (prefers-reduced-motion: reduce) { .seals img, .seal-row img { transition: none; } }
+@media (max-width: 560px) {
+  .follow { padding: 20px 10px 14px; }
+  .seals { max-width: 300px; margin: 0 auto; gap: 8px 4px; }
+  .seals li { width: 72px; }
+  .seals img { width: 56px; height: 56px; }
+  .seals b { font-size: 13px; }
+  .seal-row { max-width: 240px; }
+}
