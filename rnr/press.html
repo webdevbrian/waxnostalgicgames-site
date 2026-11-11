@@ -21,15 +21,17 @@
     .shots { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
     .shots a, .clips a { display: block; }
     .shots img { width: 100%; border-radius: 6px; }
+    .shots.wide { grid-template-columns: repeat(2, 1fr); }
     .clips { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
     .clips video { width: 100%; aspect-ratio: 9 / 16; border-radius: 6px; background: #000; }
     header .logo { display: block; width: min(100%, 560px); height: auto; margin: 0 auto; }
+    header .logo.banner { width: min(100%, 512px); border-radius: 10px; box-shadow: 0 6px 0 rgba(0,0,0,.35); }
     .art { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
     .art figure { margin: 0; background: var(--panel); border: 2px solid var(--edge); border-radius: 10px; padding: 10px; text-align: center; }
     .art img { max-height: 90px; width: auto; }
     .art figcaption { font-size: 14px; color: var(--soft); }
     .get { display: inline-block; background: var(--wax); color: #1d120b; font-weight: 700; padding: 10px 18px; border-radius: 10px; text-decoration: none; box-shadow: 0 4px 0 rgba(0,0,0,.4); }
-    @media (max-width: 560px) { .shots, .clips { grid-template-columns: repeat(2, 1fr); } .facts { grid-template-columns: 1fr; } .facts dt { margin-top: 6px; } }
+    @media (max-width: 560px) { .shots, .clips { grid-template-columns: repeat(2, 1fr); } .shots.wide { grid-template-columns: 1fr; } .facts { grid-template-columns: 1fr; } .facts dt { margin-top: 6px; } }
   </style>
 </head>
 <body>
