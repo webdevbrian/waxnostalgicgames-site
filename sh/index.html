@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stargazer&apos;s Hill · Wax Nostalgic Games</title>
+  <meta name="description" content="Stargazer's Hill: a cozy pixel-art astronomy game about the real night sky. Free on Google Play; coming soon to the App Store.">
+  <meta property="og:title" content="Stargazer's Hill">
+  <meta property="og:description" content="Name the real stars, look through your telescope and photograph the night sky. Free on Google Play; coming soon to the App Store.">
+  <meta property="og:image" content="https://webdevbrian.github.io/waxnostalgicgames-site/sh/press/banner-1024x500.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#15100d">
+  <link rel="icon" href="../brand/favicon-32.png">
+  <link rel="stylesheet" href="../style.css">
+  <script>
+    // Each post links here with ?c=<campaign>. Android phones go straight to Google Play with the campaign
+    // attached; the App Store doesn't have it yet (in review), so iPhones stay here and see "coming soon".
+    // Once it's out: the App Store id here (as sts/ has it), and the iPhone redirect.
+    (function () {
+      var q = new URLSearchParams(location.search);
+      var c = (q.get('c') || 'site').replace(/[^a-zA-Z0-9_-]/g, '').slice(0, 30) || 'site';
+      var src = c.split('-')[0];
+      var play = 'https://play.google.com/store/apps/details?id=com.webdevbrian.stargazershill&referrer=' + encodeURIComponent('utm_source=' + src + '&utm_medium=social&utm_campaign=' + c);
+      window.__stores = { play: play };
+      if (/Android/.test(navigator.userAgent)) location.replace(play);
+    })();
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Stargazer&apos;s <span>Hill</span></h1>
+    <p>Name the real stars, look through your telescope, and photograph the night sky, as it really is tonight.</p>
+  </header>
+  <main>
+    <article class="game">
+      <img class="pixel" src="../games/stargazers-hill.png" alt="Stargazer&apos;s Hill&apos;s icon" width="256" height="256">
+      <div>
+        <h3>Free on Android now</h3>
+        <p class="stores"><a id="play" href="https://play.google.com/store/apps/details?id=com.webdevbrian.stargazershill">Google Play</a> · App Store coming soon</p>
+        <p><a href="https://webdevbrian.github.io/stargazershill-site/">More about the game</a> · <a href="press.html">Press kit</a></p>
+      </div>
+    </article>
+  </main>
+  <footer><!-- seals --><nav class="seal-row" aria-label="Wax Nostalgic Games elsewhere"><a href="https://www.youtube.com/@waxnostalgicgames" rel="me noopener" target="_blank" title="YouTube"><img class="pixel" src="../brand/social/youtube.png" alt="YouTube" width="56" height="56"></a><a href="https://www.tiktok.com/@waxnostalgicgames" rel="me noopener" target="_blank" title="TikTok"><img class="pixel" src="../brand/social/tiktok.png" alt="TikTok" width="56" height="56"></a><a href="https://www.instagram.com/waxnostalgicgames/" rel="me noopener" target="_blank" title="Instagram"><img class="pixel" src="../brand/social/instagram.png" alt="Instagram" width="56" height="56"></a><a href="https://bsky.app/profile/waxnostalgicgames.bsky.social" rel="me noopener" target="_blank" title="Bluesky"><img class="pixel" src="../brand/social/bluesky.png" alt="Bluesky" width="56" height="56"></a><a href="https://www.threads.com/@waxnostalgicgames" rel="me noopener" target="_blank" title="Threads"><img class="pixel" src="../brand/social/threads.png" alt="Threads" width="56" height="56"></a><a href="https://x.com/WaxNostalgicGms" rel="me noopener" target="_blank" title="X"><img class="pixel" src="../brand/social/x.png" alt="X" width="56" height="56"></a><a href="https://www.facebook.com/1360935693780036" rel="me noopener" target="_blank" title="Facebook"><img class="pixel" src="../brand/social/facebook.png" alt="Facebook" width="56" height="56"></a></nav><!-- /seals -->Wax Nostalgic Games · <a href="../">All our games</a></footer>
+  <script>
+    document.getElementById('play').href = window.__stores.play;
+  </script>
+</body>
+</html>
