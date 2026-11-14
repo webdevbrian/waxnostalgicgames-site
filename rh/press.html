@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rocket Haul · Press kit · Wax Nostalgic Games</title>
+  <meta name="description" content="Rocket Haul press kit: Fire a rocket into the sky, dodge everything on the way up, grab everything on the way down, then blast your haul for cash.">
+  <meta property="og:title" content="Rocket Haul · Press kit">
+  <meta property="og:description" content="Fire a rocket into the sky, dodge everything on the way up, grab everything on the way down, then blast your haul for cash.">
+  <meta property="og:image" content="https://webdevbrian.github.io/waxnostalgicgames-site/rh/press/logo-on-dark.png">
+  <meta name="theme-color" content="#15100d">
+  <link rel="icon" href="../brand/favicon-32.png">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .press .lede { font-size: 19px; }
+    .facts { display: grid; grid-template-columns: max-content 1fr; gap: 6px 16px; background: var(--panel); border: 2px solid var(--edge); border-radius: 12px; padding: 14px 16px; margin: 0; }
+    .facts dt { color: var(--soft); }
+    .facts dd { margin: 0; }
+    .video { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: 10px; background: #000; }
+    .video iframe { width: 100%; height: 100%; border: 0; border-radius: 10px; }
+    .shots { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+    .shots a, .clips a { display: block; }
+    .shots img { width: 100%; border-radius: 6px; }
+    .shots.wide { grid-template-columns: repeat(2, 1fr); }
+    .clips { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+    .clips video { width: 100%; aspect-ratio: 9 / 16; border-radius: 6px; background: #000; }
+    header .logo { display: block; width: min(100%, 560px); height: auto; margin: 0 auto; }
+    header .logo.banner { width: min(100%, 512px); border-radius: 10px; box-shadow: 0 6px 0 rgba(0,0,0,.35); }
+    .art { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+    .art figure { margin: 0; background: var(--panel); border: 2px solid var(--edge); border-radius: 10px; padding: 10px; text-align: center; }
+    .art img { max-height: 90px; width: auto; }
+    .art figcaption { font-size: 14px; color: var(--soft); }
+    .get { display: inline-block; background: var(--wax); color: #1d120b; font-weight: 700; padding: 10px 18px; border-radius: 10px; text-decoration: none; box-shadow: 0 4px 0 rgba(0,0,0,.4); }
+    @media (max-width: 560px) { .shots, .clips { grid-template-columns: repeat(2, 1fr); } .shots.wide { grid-template-columns: 1fr; } .facts { grid-template-columns: 1fr; } .facts dt { margin-top: 6px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><img class="pixel logo" src="press/logo.png" alt="Rocket Haul" width="560"></h1>
+    <p>Press kit · Fire a rocket into the sky, dodge everything on the way up, grab everything on the way down, then blast your haul for cash.</p>
+  </header>
+  <main class="press prose">
+    <p class="lede">A pixel-art arcade game about the round trip. Tilt to steer your rocket up through birds, balloons, planes, satellites and UFOs; the first thing you hit stalls you. Then flip nose-down and fall back to Earth, tractor-beaming everything you touch, and fling the whole haul over the launch pad to shoot it for cash. Five skies from sleepy Pinecrest to the Moon, a giant boss above each one, seven guns and thirty challenges. Version 1.5 adds a seasonal event every month.</p>
+    <p><a class="get" href="press/rocket-haul-press-kit.zip">Download everything (zip)</a></p>
+    <h2>Trailer</h2>
+    <video class="video" src="press/trailer-1080p.mp4" poster="press/trailer-poster.png" controls preload="metadata" playsinline></video>
+    <p><a href="press/trailer-1080p.mp4" download>The trailer as a 1080p MP4</a></p>
+    <h2>Facts</h2>
+    <dl class="facts"><dt>Developer</dt><dd>Wax Nostalgic Games (Brian Kinney), USA</dd><dt>Released</dt><dd>3 October 2026 (App Store) · September 2026 (Google Play); 1.4, the pixel-art redraw, 11 November</dd><dt>Platforms</dt><dd>iPhone and Android phones. Portrait</dd><dt>Price</dt><dd>Free. No ads, no in-app purchases</dd><dt>Plays</dt><dd>Offline. No accounts</dd><dt>Languages</dt><dd>English</dd><dt>Rating</dt><dd>13+ on the App Store (frequent cartoon violence)</dd><dt>Privacy</dt><dd>No data collected</dd><dt>Built with</dt><dd>Phaser 4 and TypeScript; every picture made in code</dd></dl>
+    <h2>What's in it</h2>
+    <ul><li>Dodge up: tilt to steer, hold to boost, and the first thing you hit stalls the rocket</li><li>Grab down: fall nose-first and tractor-beam the sky, with a parachute to line up the big catches</li><li>Blast it all: fling the haul over the pad and shoot it for cash, with a Clean Sweep bonus for getting everything (but not the jellies)</li><li>Five skies and five bosses: the Sky Whale, the Space Kraken, the Aurora Dragon, the Mothership and the Cosmic Goose</li><li>Seven guns with their own mods, fuel tanks, shields, boosters, slow-mo and paint jobs</li><li>Coming in 1.5, a seasonal event every month: a runaway sleigh in December, fireworks in January, heart balloons in February, kites in March, each with a paint job to win</li></ul>
+    <h2>Screenshots</h2>
+    <div class="shots"><a href="press/phone-01-dodge.png"><img src="press/phone-01-dodge.png" alt="Rocket Haul screenshot" loading="lazy"></a><a href="press/phone-02-grab.png"><img src="press/phone-02-grab.png" alt="Rocket Haul screenshot" loading="lazy"></a><a href="press/phone-03-blast.png"><img src="press/phone-03-blast.png" alt="Rocket Haul screenshot" loading="lazy"></a><a href="press/phone-04-bosses.png"><img src="press/phone-04-bosses.png" alt="Rocket Haul screenshot" loading="lazy"></a><a href="press/phone-05-skies.png"><img src="press/phone-05-skies.png" alt="Rocket Haul screenshot" loading="lazy"></a><a href="press/phone-06-gear.png"><img src="press/phone-06-gear.png" alt="Rocket Haul screenshot" loading="lazy"></a></div>
+    
+    
+    <h2>Logo and art</h2>
+    <div class="art"><figure><a href="press/logo.png"><img class="pixel" src="press/logo.png" alt="The logo (transparent)" loading="lazy"></a><figcaption>The logo (transparent)</figcaption></figure><figure><a href="press/icon-512.png"><img class="pixel" src="press/icon-512.png" alt="The app icon" loading="lazy"></a><figcaption>The app icon</figcaption></figure><figure><a href="press/banner-1024x500.png"><img class="pixel" src="press/banner-1024x500.png" alt="A banner" loading="lazy"></a><figcaption>A banner</figcaption></figure><figure><a href="press/studio-seal.png"><img class="pixel" src="press/studio-seal.png" alt="Wax Nostalgic Games' seal" loading="lazy"></a><figcaption>Wax Nostalgic Games' seal</figcaption></figure></div>
+    <h2>Get it</h2>
+    <p><a href="https://apps.apple.com/app/id6816529096?pt=528711&amp;ct=press&amp;mt=8">App Store</a> · <a href="https://play.google.com/store/apps/details?id=com.webdevbrian.skyhaul&amp;referrer=utm_source%3Dpress%26utm_medium%3Dpress%26utm_campaign%3Dpress">Google Play</a> · <a href="https://webdevbrian.github.io/rockethaul-site/">The game's site</a></p>
+    <h2>Contact</h2>
+    <p>Questions, interviews, anything else: <a href="mailto:waxnostalgicgames@gmail.com">waxnostalgicgames@gmail.com</a></p>
+  </main>
+  <footer><nav class="seal-row" aria-label="Wax Nostalgic Games elsewhere"><a href="https://www.youtube.com/@waxnostalgicgames" rel="me noopener" target="_blank" title="YouTube"><img class="pixel" src="../brand/social/youtube.png" alt="YouTube" width="56" height="56"></a><a href="https://www.tiktok.com/@waxnostalgicgames" rel="me noopener" target="_blank" title="TikTok"><img class="pixel" src="../brand/social/tiktok.png" alt="TikTok" width="56" height="56"></a><a href="https://www.instagram.com/waxnostalgicgames/" rel="me noopener" target="_blank" title="Instagram"><img class="pixel" src="../brand/social/instagram.png" alt="Instagram" width="56" height="56"></a><a href="https://bsky.app/profile/waxnostalgicgames.bsky.social" rel="me noopener" target="_blank" title="Bluesky"><img class="pixel" src="../brand/social/bluesky.png" alt="Bluesky" width="56" height="56"></a><a href="https://www.threads.com/@waxnostalgicgames" rel="me noopener" target="_blank" title="Threads"><img class="pixel" src="../brand/social/threads.png" alt="Threads" width="56" height="56"></a><a href="https://x.com/WaxNostalgicGms" rel="me noopener" target="_blank" title="X"><img class="pixel" src="../brand/social/x.png" alt="X" width="56" height="56"></a><a href="https://www.facebook.com/1360935693780036" rel="me noopener" target="_blank" title="Facebook"><img class="pixel" src="../brand/social/facebook.png" alt="Facebook" width="56" height="56"></a></nav>Wax Nostalgic Games · Pixel art games, redefined · <a href="../">All our games</a></footer>
+</body>
+</html>

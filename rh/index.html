@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rocket Haul · Wax Nostalgic Games</title>
+  <meta name="description" content="Rocket Haul: fire a pixel-art rocket into the sky, dodge everything on the way up, grab everything on the way down, then blast your haul for cash. Free on the App Store and Google Play.">
+  <meta property="og:title" content="Rocket Haul">
+  <meta property="og:description" content="Dodge up, grab down, blast it all. Free on the App Store and Google Play.">
+  <meta property="og:image" content="https://webdevbrian.github.io/waxnostalgicgames-site/rh/press/banner-1024x500.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#15100d">
+  <link rel="icon" href="../brand/favicon-32.png">
+  <link rel="stylesheet" href="../style.css">
+  <script>
+    // Each post links here with ?c=<campaign> (bsky-1117, yt-1117…): phones go straight to their store
+    // with the campaign attached, so the stores' analytics say which post brought the install.
+    (function () {
+      var q = new URLSearchParams(location.search);
+      var c = (q.get('c') || 'site').replace(/[^a-zA-Z0-9_-]/g, '').slice(0, 30) || 'site';
+      var src = c.split('-')[0];
+      var ios = 'https://apps.apple.com/app/id6816529096?pt=528711&ct=' + c + '&mt=8';
+      var play = 'https://play.google.com/store/apps/details?id=com.webdevbrian.skyhaul&referrer=' + encodeURIComponent('utm_source=' + src + '&utm_medium=social&utm_campaign=' + c);
+      window.__stores = { ios: ios, play: play };
+      var ua = navigator.userAgent;
+      var apple = /iPhone|iPad|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+      if (apple) location.replace(ios);
+      else if (/Android/.test(ua)) location.replace(play);
+    })();
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Rocket <span>Haul</span></h1>
+    <p>Fire a rocket into the sky, dodge everything on the way up, grab everything on the way down, then blast your haul for cash.</p>
+  </header>
+  <main>
+    <article class="game">
+      <img class="pixel" src="../games/rocket-haul.png" alt="Rocket Haul&apos;s icon" width="256" height="256">
+      <div>
+        <h3>Free on your phone</h3>
+        <p class="stores"><a id="ios" href="https://apps.apple.com/app/id6816529096?pt=528711&ct=site&mt=8">App Store</a> · <a id="play" href="https://play.google.com/store/apps/details?id=com.webdevbrian.skyhaul">Google Play</a></p>
+        <p><a href="https://webdevbrian.github.io/rockethaul-site/">More about the game</a> · <a href="press.html">Press kit</a></p>
+      </div>
+    </article>
+  </main>
+  <footer><!-- seals --><nav class="seal-row" aria-label="Wax Nostalgic Games elsewhere"><a href="https://www.youtube.com/@waxnostalgicgames" rel="me noopener" target="_blank" title="YouTube"><img class="pixel" src="../brand/social/youtube.png" alt="YouTube" width="56" height="56"></a><a href="https://www.tiktok.com/@waxnostalgicgames" rel="me noopener" target="_blank" title="TikTok"><img class="pixel" src="../brand/social/tiktok.png" alt="TikTok" width="56" height="56"></a><a href="https://www.instagram.com/waxnostalgicgames/" rel="me noopener" target="_blank" title="Instagram"><img class="pixel" src="../brand/social/instagram.png" alt="Instagram" width="56" height="56"></a><a href="https://bsky.app/profile/waxnostalgicgames.bsky.social" rel="me noopener" target="_blank" title="Bluesky"><img class="pixel" src="../brand/social/bluesky.png" alt="Bluesky" width="56" height="56"></a><a href="https://www.threads.com/@waxnostalgicgames" rel="me noopener" target="_blank" title="Threads"><img class="pixel" src="../brand/social/threads.png" alt="Threads" width="56" height="56"></a><a href="https://x.com/WaxNostalgicGms" rel="me noopener" target="_blank" title="X"><img class="pixel" src="../brand/social/x.png" alt="X" width="56" height="56"></a><a href="https://www.facebook.com/1360935693780036" rel="me noopener" target="_blank" title="Facebook"><img class="pixel" src="../brand/social/facebook.png" alt="Facebook" width="56" height="56"></a></nav><!-- /seals -->Wax Nostalgic Games · <a href="../">All our games</a></footer>
+  <script>
+    document.getElementById('ios').href = window.__stores.ios;
+    document.getElementById('play').href = window.__stores.play;
+  </script>
+</body>
+</html>
