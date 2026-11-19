@@ -18,6 +18,8 @@ h2 { font-size: 22px; margin: 32px 0 12px; color: var(--wax); }
 .game { display: flex; gap: 18px; align-items: center; background: var(--panel); border: 2px solid var(--edge); border-radius: 14px; padding: 16px; }
 .game img { width: 96px; height: 96px; border-radius: 22px; flex: none; box-shadow: 0 4px 0 rgba(0,0,0,.4); }
 .game h3 { margin: 0; font-size: 21px; }
+.game h3 a { color: inherit; text-decoration: none; }
+.game h3 a:hover, .game h3 a:focus-visible { text-decoration: underline; text-underline-offset: 3px; }
 .game p { margin: 4px 0 0; color: var(--soft); }
 .game .stores { margin-top: 8px; font-weight: 600; }
 .prose h2 { margin-top: 28px; }
